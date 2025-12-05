@@ -2,6 +2,7 @@
 import { BirthdayCard } from "@/components/birthday-card"
 import { TodaysBirthday } from "@/components/todays-birthday"
 import { CashewDecoration } from "@/components/cashew-decoration"
+import { BackgroundMusic } from "@/components/background-music"
 import { Card } from "@/components/ui/card"
 
 // Sample birthday data - replace with your actual data
@@ -81,6 +82,8 @@ export default function BirthdayWall() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-cream via-peach-light to-pink-light relative overflow-hidden">
+      <BackgroundMusic />
+
       {/* Decorative cashews floating in background */}
       <CashewDecoration className="absolute top-10 left-10 opacity-20" size="large" />
       <CashewDecoration className="absolute top-40 right-20 opacity-15" size="medium" />
@@ -91,7 +94,7 @@ export default function BirthdayWall() {
         {/* Header */}
         <header className="text-center mb-16 animate-fadeIn">
           <div className="inline-block mb-6">
-            <img src="/images/Cajuinas-logo.png" alt="Cajuínas - Mulheres na Tecnologia" className="h-24 w-auto mx-auto" />
+            <img src="/images/image.png" alt="Cajuínas - Mulheres na Tecnologia" className="h-24 w-auto mx-auto" />
           </div>
           <h1 className="text-5xl md:text-6xl font-bold text-primary mb-4 text-balance">🎉 Mural de Aniversários</h1>
           <p className="text-xl text-primary-dark max-w-2xl mx-auto text-pretty leading-relaxed">
